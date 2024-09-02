@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OrganizeMe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container" id="Tarefas">
+            <h1>OrganizeMe</h1>
+            
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+           
+            <div class="filter-buttons">
+                <button id="allBtn">Todos</button>
+                <button id="morningBtn">Manhã</button>
+                <button id="afternoonBtn">Tarde</button>
+                <button id="eveningBtn">Noite</button>
+            </div>
+
+            
+
+        </div>
+        <ul id="taskList"></ul>
+        <button id="newTaskBtn">Crie uma nova tarefa</button>
+    </main>
+
+    <div id="taskModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Criar Nova Tarefa</h2>
+            <label for="taskName">Tarefa:</label>
+            <input type="text" id="taskName" placeholder="Descrição da tarefa">
+
+            <label for="taskDate">Data:</label>
+            <input type="date" id="taskDate">
+
+            <label for="taskTime">Hora:</label>
+            <input type="time" id="taskTime">
+
+            <h3>Recomendações de Tarefas</h3>
+            <ul id="taskRecommendations">
+                <!-- Recomendações dinâmicas -->
+            </ul>
+
+            <button id="saveTaskBtn">Salvar Tarefa</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
